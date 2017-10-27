@@ -27,7 +27,7 @@ namespace Enyim.Caching
 	/// </example>
 	public static class LogManager
 	{
-		private static ILogFactory factory;
+		private static ILogFactory factory = new NullLoggerFactory();
 
 #if NETFX
 		static LogManager()

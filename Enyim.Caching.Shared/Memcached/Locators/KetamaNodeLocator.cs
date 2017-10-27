@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Enyim.Caching.Memcached
 	public sealed class KetamaNodeLocator : IMemcachedNodeLocator
 	{
 		// TODO make this configurable without restructuring the whole config system
-		private const string DefaultHashName = "System.Security.Cryptography.MD5";
+		private const string DefaultHashName = "md5";
 		private const int ServerAddressMutations = 160;
 		private LookupData lookupData;
 		private string hashName;
@@ -251,7 +251,7 @@ namespace Enyim.Caching.Memcached
 #region [ License information          ]
 /* ************************************************************
  *
- *    Copyright (c) 2010 Attila Kisk�, enyim.com
+ *    Copyright (c) 2010 Attila Kiskó, enyim.com
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
